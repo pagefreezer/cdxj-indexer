@@ -179,6 +179,13 @@ org,httpbin)/post?__wb_method=post&__wb_post_data=c29tzwnodw5rlwvuy29kzwrkyxrh 2
 """
         assert res == exp
 
+    def test_warc_cdxj_valid_surts(self):
+        res = self.index_file("connectrequest.warc", sort=True)
+        exp = """\
+nl,sidefryseskaber)/ 20220914144500 {"url": "https://www.sidefryseskaber.nl/", "mime": "text/html", "status": "200", "digest": "sha1:XTOSRARDT4QYU3M5QROYJQOPOF7PHSM3", "length": "11273", "offset": "907", "filename": "connectrequest.warc"}
+"""
+        assert res == exp
+
     def test_warc_cdxj_compressed_1(self):
         # specify file directly
         with tempfile.TemporaryFile() as temp_fh:

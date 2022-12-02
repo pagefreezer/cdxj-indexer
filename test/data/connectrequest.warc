@@ -1,0 +1,302 @@
+WARC/1.0
+Content-Length: 536
+Content-Type: application/http;msgtype=request
+WARC-Block-Digest: sha1:DX3PGU6LDHH7XCGC2ZYD5IBODU54K3ME
+WARC-Date: 2022-09-14T14:45:00Z
+WARC-Payload-Digest: sha1:3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ
+WARC-Record-ID: <urn:uuid:6eac0a5f-d24a-4810-a7ea-163adaa0b828>
+WARC-Target-URI: https://www.sidefryseskaber.nl/
+WARC-Type: request
+
+GET https://www.sidefryseskaber.nl/ HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Content-Length: 0
+Host: www.sidefryseskaber.nl
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Upgrade-Insecure-Requests: 1
+User-Agent: PageFreezer (pagefreezer crawler; http://pagefreezer.com/pagefreezer-crawler/; info@pagefreezer.com)
+
+
+
+WARC/1.0
+Content-Length: 10833
+Content-Type: application/http;msgtype=response
+WARC-Block-Digest: sha1:6HP7D3AUWDKLHYGI3XRL273TXFD5PXPK
+WARC-Concurrent-To: <urn:uuid:6eac0a5f-d24a-4810-a7ea-163adaa0b828>
+WARC-Date: 2022-09-14T14:45:00Z
+WARC-Payload-Digest: sha1:XTOSRARDT4QYU3M5QROYJQOPOF7PHSM3
+WARC-Record-ID: <urn:uuid:7a9647d4-5e5b-404c-9e68-9b631c4fcced>
+WARC-Target-URI: https://www.sidefryseskaber.nl/
+WARC-Type: response
+
+HTTP/1.1 200 OK
+Cache-Control: no-store, no-cache, must-revalidate
+Connection: Keep-Alive
+Content-Length: 10406
+Content-Type: text/html; charset=UTF-8
+Date: Wed, 14 Sep 2022 14:44:32 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Keep-Alive: timeout=3, max=100
+Pragma: no-cache
+Server: Apache/2.4.54 (Unix)
+Set-Cookie: PHPSESSID=ajsrnaksrsj5r77qf66mc46uk1; path=/
+Transfer-Encoding: chunked
+X-Powered-By: PHP/8.0.22
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Crawl template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- will be removed -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
+</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+            <div id="header">
+    <h1 style="display:none"><a href="/" id="logo"></a></h1>
+    <nav id="nav">
+        <ul>
+            <li class="current"><a href="/">Home</a></li>
+            <li >
+                <a href="/page1.php">Page 1</a>
+                <ul>
+                    <li><a href="/movies.php">Movies</a></li>
+                    <li><a href="/media.php">Media</a></li>
+                    <!--<li><a href="/infinite">Infinite scroll</a></li>-->
+                    <li><a href="/images.php">Images</a></li>
+                    <li><a href="/massimages.php">200 Images</a></li>
+                    <li><a href="/links.php">Links</a></li>
+                    <li><a href="/basetag.php">Basetag</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page2.php">Page 2</a>
+                <ul>
+                    <li><a href="/randomvariables.php">Variables</a></li>
+                    <li><a href="/iframe.php">IFrame</a></li>
+                    <li><a href="/shadowdom.php">Shadowdom</a></li>
+                    <li><a href="/iframebreaker.php">Iframebreaker</a></li>
+                    <li><a href="/cookie.php">Cookie page</a></li>
+                    <li><a href="/characters.php">UTF-8 Characters</a></li>
+                    <li><a href="/postrequest.php">Postrequest</a></li>
+                    <li><a href="/downloads.php">Downloads</a></li>
+                    <li><a href="/sw/">Service worker</a></li>
+                    <li><a href="/timeout.php">Timeout</a></li>
+                    <li><a href="/pageloadmore.php">Load more page</a></li>
+                                        <li><a href="#">Redirects -></a>
+                      <ul>
+                        <li><a href="/externalredirect.php">External javascript redirect</a></li>
+                        <li><a href="/htmlredirect.php">HTML redirect</a></li>
+                        <li><a href="/301redirect.php">301 redirect</a></li>
+                        <li><a href="/302redirect.php">302 redirect</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <li ><a href="/page3.php">Page 3</a>
+                <ul>
+                  <li><a href="/restricted">Restricted</a></li>
+                  <li><a href="/restricted/login2.php">Restricted (login2)</a></li>
+                  <li><a href="/restricted/login3.php">Restricted (login3)</a></li>
+                  <li><a href="/restricted/basicauth.php">Basic authentication</a></li>
+                  <li><a href="/blockingpopup.php">Blocking popup</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page4.php">Page 4</a>
+              <ul>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=1&links=0">Incremental 1</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=2&links=0">Incremental 2</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=3&links=0">Incremental 3</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=4&links=0">Incremental 4</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=5&links=0">Incremental 5</a></li>
+                <li><a href="/deleted.php">Deleted pages</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
+</div>				<!-- Posts -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="page1.php" class="image left"><img src="images/pic01.jpg" alt="" /></a>
+									<div class="inner">
+										<h3><a href="page1.php">The First Thing</a></h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									</div>
+								</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="page2.php" class="image left"><img src="images/pic02.jpg" alt="" /></a>
+									<div class="inner">
+										<h3><a href="page2.php">The Second Thing</a></h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="page3.php" class="image left"><img src="images/pic03.jpg" alt="" /></a>
+									<div class="inner">
+										<h3><a href="page3.php">The Third Thing</a></h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									</div>
+								</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="page4.php" class="image left"><img src="images/pic04.jpg" alt="" /></a>
+									<div class="inner">
+										<h3><a href="page4.php">The Fourth Thing</a></h3>
+										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+
+			<!-- Highlights -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-paper-plane"></i>
+									<h3>This Is Important</h3>
+									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-pencil-alt"></i>
+									<h3>Also Important</h3>
+									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-wrench"></i>
+									<h3>Probably Important</h3>
+									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+
+                <!-- CTA -->
+                <section id="cta" class="wrapper style3">
+                    <div class="container">
+                        <header>
+                            <h2>Are you ready to continue your quest?</h2>
+                            <a href="#" class="button">To top</a>
+                        </header>
+                    </div>
+                </section>
+            <!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Relative links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Absolute links</h3>
+                <ul class="links">
+                    <li><a href="#">Duis neque nisi dapibus</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan sed</a></li>
+                    <li><a href="#">Mattis et sed accumsan</a></li>
+                    <li><a href="#">Duis neque nisi sed</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum amet varius</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>External links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; Dummy Inc. All rights reserved</li></li>
+        </ul>
+    </div>
+</div>
+		</div>
+        <!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.dropotron.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookiepopup.js"></script>	</body>
+</html>
+
+WARC/1.0
+Content-Length: 308
+Content-Type: application/http;msgtype=request
+WARC-Block-Digest: sha1:XDTRC67IG3EYGKYRBFK7BOYLBRJHW52X
+WARC-Date: 2022-09-14T14:45:01Z
+WARC-Payload-Digest: sha1:3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ
+WARC-Record-ID: <urn:uuid:d083e59a-e1c5-4079-bb20-cf6115fa342d>
+WARC-Target-URI: distillery.wistia.com:443
+WARC-Type: request
+
+CONNECT distillery.wistia.com:443 HTTP/1.1
+Accept-Encoding: *, compress;q=0, br;q=0
+Content-Length: 0
+Host: distillery.wistia.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/105.0.5195.102 Safari/537.36
+
+
+
+WARC/1.0
+Content-Length: 125
+Content-Type: application/http;msgtype=response
+WARC-Block-Digest: sha1:CCXVWNLY3E4FDIZ2QJEOAUVQWTR7ZCAF
+WARC-Concurrent-To: <urn:uuid:d083e59a-e1c5-4079-bb20-cf6115fa342d>
+WARC-Date: 2022-09-14T14:45:01Z
+WARC-Payload-Digest: sha1:KK3MP7UFHPXS3X2Q2BFSWZHBC6DLFAOK
+WARC-Record-ID: <urn:uuid:4135a1e5-352b-415f-8835-0fa1f9728d52>
+WARC-Target-URI: distillery.wistia.com:443
+WARC-Type: response
+
+HTTP/1.1 502 Bad Gateway
+content-length: 77
+
+Cannot connect to distillery.wistia.com:443: [Errno 11004] getaddrinfo failed
+

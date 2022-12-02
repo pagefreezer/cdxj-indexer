@@ -1,4 +1,7 @@
 from __future__ import absolute_import
+
+import hashlib
+import heapq
 import json
 import surt
 import logging
@@ -22,7 +25,6 @@ from warcio.archiveiterator import ArchiveIterator
 from warcio.utils import open_or_default
 
 from cdxj_indexer.bufferiter import buffering_record_iter, BUFF_SIZE
-
 
 # ============================================================================
 class CDXJIndexer(Indexer):
@@ -296,7 +298,8 @@ class CDXJIndexer(Indexer):
         self._do_write(urlkey, ts, index, out)
 
     def _do_write(self, urlkey, ts, index, out):
-        out.write(urlkey + " " + ts + " " + json.dumps(index) + "\n")
+        if ")/" in urlkey:
+            out.write(urlkey + " " + ts + " " + json.dumps(index) + "\n")
 
     def get_url_key(self, url):
         try:
