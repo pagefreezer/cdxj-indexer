@@ -75,11 +75,11 @@ def concur_req_resp(rec_1, rec_2):
     ) != rec_1.rec_headers.get_header("WARC-Record-ID"):
         return None, None
 
-    if rec_1.rec_type == "response" and rec_2.rec_type == "request":
+    if (rec_1.rec_type == "response" or rec_1.rec_type == "revisit") and rec_2.rec_type == "request":
         req = rec_2
         resp = rec_1
 
-    elif rec_1.rec_type == "request" and rec_2.rec_type == "response":
+    elif rec_1.rec_type == "request" and (rec_2.rec_type == "response" or rec_2.rec_type == "revisit"):
         req = rec_1
         resp = rec_2
 
