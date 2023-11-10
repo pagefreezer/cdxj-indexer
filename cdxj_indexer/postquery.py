@@ -9,8 +9,10 @@ import base64
 import cgi
 import json
 import sys
+import demjson3
 
 MAX_QUERY_LENGTH = 4096
+
 
 # ============================================================================
 def append_method_query_from_req_resp(req, resp):
@@ -117,12 +119,13 @@ def query_extract(mime, length, stream, url):
 
     elif mime.startswith("application/json"):
         try:
+            # query_data = fix_json(query_data)
             query = json_parse(query_data)
         except Exception as e:
             if query_data:
                 try:
                     sys.stderr.write(
-                        "Error parsing: " + query_data.decode("utf-8") + "\n"
+                        "Error parsing json post data: " + query_data.decode("utf-8") + "\n"
                     )
                 except:
                     pass
@@ -173,7 +176,7 @@ def json_parse(string):
             data[get_key(name)] = str(json_obj)
 
     try:
-        _parser(json.loads(string))
+        _parser(load_json(string))
     except json.decoder.JSONDecodeError:
         if b"\n" in string:
             for line in string.split(b"\n"):
@@ -182,3 +185,16 @@ def json_parse(string):
             raise
 
     return urlencode(data)
+
+
+def load_json(json_data):
+    if isinstance(json_data, bytes):
+        json_str = json_data.decode('utf-8')
+    else:
+        json_str = json_data
+
+    try:
+        return demjson3.decode(json_str)
+    except demjson3.JSONDecodeError:
+        return json.loads(json_str)
+

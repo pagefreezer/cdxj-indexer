@@ -61,6 +61,29 @@ class TestPostQueryExtract(object):
             == "http://example.com/?__wb_method=POST&a=b&a.2_=2&d=e"
         )
 
+    def test_post_invalid_quot_json_extract_json(self):
+        post_data = b'{\'a\': "b", "c": {\'a\': 2}, "d": "e\'"}'
+        mq = MethodQueryCanonicalizer(
+            "POST", "application/json", len(post_data), BytesIO(post_data)
+        )
+
+        assert (
+                mq.append_query("http://example.com/")
+                == "http://example.com/?__wb_method=POST&a=b&a.2_=2&d=e%27"
+        )
+
+    def test_post_invalid_missing_end_quot_json_extract_json(self):
+        post_data = b'{"a: "b", "c": {\'a\': 2}, "d": "e\'"}'
+        mq = MethodQueryCanonicalizer(
+            "POST", "application/json", len(post_data), BytesIO(post_data)
+        )
+
+        assert (
+                mq.append_query("http://example.com/")
+                == "http://example.com/?__wb_method=POST"
+        )
+
+
     def test_post_extract_json_top_list(self):
         post_data = (
             b'[{"a": "b", "c": {"a": 2}}, {"d": "e"}, "ignored", false, null, 0]'
@@ -218,3 +241,5 @@ class TestPostQueryExtract(object):
         ev_2["/0"] = req
 
         assert amf_parse(encode(ev_1).getvalue()) != amf_parse(encode(ev_2).getvalue())
+
+
