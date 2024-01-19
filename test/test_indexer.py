@@ -136,7 +136,7 @@ com,example)/ 20170306040348 {"url": "http://example.com/", "digest": "sha1:3I42
         res = self.index_file("example.warc.gz", records="all", post_append=True)
         assert res == exp
 
-    def test_warc_secondary_index_boundary(self, number_of_warc_requests, lines):
+    def createindex_warc_secondary_index_boundary(self, number_of_warc_requests, lines):
         with tempfile.TemporaryFile() as temp_fh:
             filename = f"requests{number_of_warc_requests}.warc"
             res = self.index_file(
@@ -155,7 +155,7 @@ com,example)/ 20170306040348 {"url": "http://example.com/", "digest": "sha1:3I42
         lines = 4
 
         for number_of_warc_requests in test_number_of_warc_requests:
-            res = self.test_warc_secondary_index_boundary(number_of_warc_requests=number_of_warc_requests, lines=lines)
+            res = self.createindex_warc_secondary_index_boundary(number_of_warc_requests=number_of_warc_requests, lines=lines)
             line_count = len([line for line in res.splitlines() if not line.startswith('!meta')])
             assert (number_of_warc_requests // lines) + (1 if number_of_warc_requests % lines != 0 else 0) == line_count
 

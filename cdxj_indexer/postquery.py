@@ -122,7 +122,7 @@ def query_extract(mime, length, stream, url):
             if query_data:
                 try:
                     sys.stderr.write(
-                        "Error parsing: " + query_data.decode("utf-8") + "\n"
+                        "Error parsing JSON post data: " + query_data.decode("utf-8") + "\n"
                     )
                 except:
                     pass
