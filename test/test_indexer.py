@@ -124,8 +124,6 @@ com,example)/ 20170306040348 {"url": "http://example.com/", "digest": "sha1:3I42
     def test_warc_all_cdxj(self):
         res = self.index_file("example.warc.gz", records="all")
         exp = """\
-- 20170306040353 {"mime": "application/warc-fields", "length": "353", "offset": "0", "filename": "example.warc.gz"}
-- 20170306040353 {"mime": "application/warc-fields", "length": "431", "offset": "353", "filename": "example.warc.gz"}
 com,example)/ 20170306040206 {"url": "http://example.com/", "mime": "text/html", "status": "200", "digest": "sha1:G7HRM7BGOKSKMSXZAHMUQTTV53QOFSMK", "length": "1242", "offset": "784", "filename": "example.warc.gz"}
 com,example)/ 20170306040206 {"url": "http://example.com/", "digest": "sha1:3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ", "length": "609", "offset": "2026", "filename": "example.warc.gz"}
 com,example)/ 20170306040348 {"url": "http://example.com/", "mime": "warc/revisit", "status": "200", "digest": "sha1:G7HRM7BGOKSKMSXZAHMUQTTV53QOFSMK", "length": "585", "offset": "2635", "filename": "example.warc.gz"}
@@ -223,8 +221,10 @@ nl,sidefryseskaber)/ 20220914144500 {"url": "https://www.sidefryseskaber.nl/", "
 
         exp = """\
 !meta 0 {"format": "cdxj-gzip-1.0", "filename": "%s"}
-com,example)/ 20140102000000 {"offset": 0, "length": 819}
-org,httpbin)/post?__wb_method=post&another=more^data&test=some+data 20200809195334 {"offset": 819, "length": 420}
+com,example)/ 20140102000000 {"offset": 0, "length": 555}
+nl,paginabevriezer)/page1.php?pageid=2 20240118140919 {"offset": 555, "length": 324}
+nl,paginabevriezer)/page1.php?pageid=5 20240119081227 {"offset": 879, "length": 827}
+org,httpbin)/post?__wb_method=post&data=^&foo=bar 20140610001255 {"offset": 1706, "length": 325}
 """
         assert res == exp % "comp.cdxj.gz"
 
@@ -262,16 +262,16 @@ org,httpbin)/post?__wb_method=post&another=more^data&test=some+data 202008091953
 
         lines = res.strip().split("\n")
 
-        assert len(lines) == 3
+        assert len(lines) == 5
         assert (
                 lines[0]
                 == '!meta 0 {"format": "cdxj-gzip-1.0", "filename": "comp_2.cdxj.gz"}'
         )
         assert lines[1].startswith(
-            'com,example)/ 20140102000000 {"offset": 0, "length": 1319, "digest": "sha256:'
+            'com,example)/ 20140102000000 {"offset": 0, "length": 1047, "digest": "sha256:'
         )
         assert lines[2].startswith(
-            'org,httpbin)/post?__wb_method=post&another=more^data&test=some+data 20200809195334 {"offset": 1319, "length": 570, "digest": "sha256:'
+            'nl,paginabevriezer)/page1.php?pageid=2 20240118140919 {"offset": 1047, "length": 795, "digest": "sha256:'
         )
 
         # specify named temp file, extension auto-added
@@ -307,7 +307,7 @@ org,httpbin)/post?__wb_method=post&another=more^data&test=some+data 202008091953
 
         exp = """\
 com,example)/ 20170306040206 {"url": "http://example.com/", "mime": "text/html", "status": "200", "digest": "sha1:G7HRM7BGOKSKMSXZAHMUQTTV53QOFSMK", "length": "1242", "offset": "784", "filename": "example.warc.gz", "method": "GET", "referrer": "https://webrecorder.io/temp-MJFXHZ4S/temp/recording-session/record/http://example.com/", "http:date": "Mon, 06 Mar 2017 04:02:06 GMT"}
-com,example)/ 20170306040348 {"url": "http://example.com/", "mime": "warc/revisit", "status": "200", "digest": "sha1:G7HRM7BGOKSKMSXZAHMUQTTV53QOFSMK", "length": "585", "offset": "2635", "filename": "example.warc.gz", "http:date": "Mon, 06 Mar 2017 04:03:48 GMT"}
+com,example)/ 20170306040348 {"url": "http://example.com/", "mime": "warc/revisit", "status": "200", "digest": "sha1:G7HRM7BGOKSKMSXZAHMUQTTV53QOFSMK", "length": "585", "offset": "2635", "filename": "example.warc.gz", "method": "GET", "referrer": "https://webrecorder.io/temp-MJFXHZ4S/temp/recording-session/record/http://example.com/", "http:date": "Mon, 06 Mar 2017 04:03:48 GMT"}
 """
         assert res == exp
 
