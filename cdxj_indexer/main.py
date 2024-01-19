@@ -476,11 +476,14 @@ class CompressedWriter:
             if self.digest_records
             else None
         )
-        line = self.prefix + " " + self.get_index_json(length, digest)
-        self.index_out.write(line)
+        if self.prefix != "":
+            line = self.prefix + " " + self.get_index_json(length, digest)
+            self.index_out.write(line)
         self.data_out.write(compressed)
         self.offset += length
         self.block = []
+        self.prefix = ""
+
 
 
 # ============================================================================

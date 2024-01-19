@@ -1,0 +1,1485 @@
+WARC/1.0
+WARC-Type: request
+WARC-Record-ID: <urn:uuid:925279c0-cc52-47ba-9ca1-6f586a9cfd58>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=1
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:YP4YLHK5KFI24SFPJNYQSMHY75ZME4UH
+WARC-Block-Digest: sha1:AABD5NEUVBMPJZDOUOXECCTPG4JNSQNK
+Content-Type: application/http; msgtype=request
+Content-Length: 215
+
+GET
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:818290d1-e1db-41a8-99a6-269325ea8a0e>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=1
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:AI3GOCQ5XI4TSCXMFTOBGI5RSOGCDPEF
+WARC-Block-Digest: sha1:CLWBERH7UEVMSXWM35K5HUEUK5YGBG6L
+Content-Type: application/http; msgtype=response
+Content-Length: 14069
+
+200 OK
+Date: Fri, 19 Jan 2024 08:12:29 GMT
+Server: Apache/2.4.58 (Unix)
+X-Powered-By: PHP/8.3.0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=jbnovctlr1qtf4f8356b5lm75s; path=/
+Keep-Alive: timeout=3, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Page1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- will be removed -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
+  </head>
+<body class="is-preload">
+<div id="page-wrapper">
+    <div id="header">
+    <h1 style="display:none"><a href="/" id="logo"></a></h1>
+    <nav id="nav">
+        <ul>
+            <li ><a href="/">Home</a></li>
+            <li class="current">
+                <a href="/page1.php">Page 1</a>
+                <ul>
+                    <li><a href="/movies.php">Movies</a></li>
+                    <li><a href="/media.php">Media</a></li>
+                    <li><a href="/images.php">Images</a></li>
+                    <li><a href="/massimages.php">200 Images</a></li>
+                    <li><a href="/links.php">Links</a></li>
+                    <li><a href="/externallinks.php">External Links</a></li>
+                    <li><a href="/basetag.php">Basetag</a></li>
+                    <li><a href="/forminputs.php">Form inputs</a></li>
+                    <li><a href="/tests/whatismyip.php">Crawler IP</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page2.php">Page 2</a>
+                <ul>
+                    <li><a href="/randomvariables.php">Variables</a></li>
+                    <li><a href="/iframe.php">IFrame</a></li>
+                    <li><a href="/shadowdom.php">Shadowdom</a></li>
+                    <li><a href="/downloads.php">Downloads</a></li>
+                    <li><a href="/sw/">Service worker</a></li>
+                    <li><a href="/pageloadmore.php">Load more page</a></li>
+                    <li><a href="/infinitescrolling.php">Infinite scroll</a></li>
+                    
+                  <li><a href="#">Post requests -></a>
+                    <ul>
+                      <li><a href="/postrequest.php">Postrequest</a></li>
+                      <li><a href="/postrequeststatic.php">Static chained postrequest</a></li>
+                      <li><a href="/multiplepostrequeststatic.php">Multiple post requests</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </li>
+            <li ><a href="/page3.php">Page 3</a>
+                <ul>
+                  <li><a href="/restricted">Restricted</a></li>
+                  <li><a href="/restricted/login2.php">Restricted (login2)</a></li>
+                  <li><a href="/restricted/login3.php">Restricted (login3)</a></li>
+                  <li><a href="/restricted/basicauth.php">Basic authentication</a></li>
+                  <li><a href="/blockingpopup.php">Blocking popup</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page4.php">Page 4</a>
+              <ul>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=1&links=0">Incremental 1</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=2&links=0">Incremental 2</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=3&links=0">Incremental 3</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=4&links=0">Incremental 4</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=5&links=0">Incremental 5</a></li>
+                <li><a href="/deleted.php">Deleted pages</a></li>
+                <li><a href="/deleted2.php">Deleted page</a></li>
+                <li><a href="/tests/identical1.php">Identical 1</a></li>
+                <li><a href="/tests/identical2.php">Identical 2</a></li>
+              </ul>
+            </li>
+          <li ><a href="/page5.php">Page 5</a>
+            <ul>
+              <li><a href="#">Tests part 1 -></a>
+                <ul>
+                  <li><a href="/tests/contentencodingheader.php">Content encoding header</a></li>
+                  <li><a href="/tests/cookie.php">Cookie</a></li>
+                  <li><a href="/tests/framebreaker.php">Framebreaker</a></li>
+                  <li><a href="/tests/illegalcharacterinlink.php">Illegal character in stylesheetlink</a></li>
+                  <li><a href="/tests/timeout.php">Timeout</a></li>
+                  <li><a href="/tests/timeout2.php">Timeout - Fast head</a></li>
+                  <li><a href="/tests/useragentdependent.php">User-agent dependent download</a></li>
+                  <li><a href="/tests/utf8characters.php">UTF-8 characters</a></li>
+                  <li><a href="/tests/hiddenlinks.php">Hidden links</a></li>
+                  <li><a href="/tests/notitle.php">Page without title</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tests part 2 -></a>
+                <ul>
+                  <li><a href="/tests/brokeniframes.php">Broken iframes</a></li>
+                  <li><a href="/tests/onclicklinks.php">On clicks</a></li>
+                  <li><a href="/tests/getandoption.php">Get/Option call</a></li>
+                  <li><a href="/tests/deleted.php">Deleted page</a></li>
+                  <li><a href="/tests/virtualtime.php">Virtual Time</a></li>
+                  <li><a href="/tests/invalidjsonpostdata.php">Invalid json response</a></li>
+                  <li><a href="/tests/mediaqueries.php">CSS media queries</a></li>
+                  <li><a href="/tests/javascriptwithbomoptions.php">Javascript with BOM</a></li>
+                  <li><a href="/tests/dataset_hasownproperty.php">Javascript hasOwnProperty error</a></li>
+                  <li><a href="/tests/elementobserver.php">Javascript observer error</a></li>
+                  <li><a href="/tests/imageencoding.php">Image encoding problem</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Redirects -></a>
+                <ul>
+                  <li><a href="/tests/htmlredirect.php">HTML redirect</a></li>
+                  <li><a href="/tests/301redirect.php">301 redirect</a></li>
+                  <li><a href="/tests/302redirect.php">302 redirect</a></li>
+                  <li><a href="/tests/302redirecttopdf.php">302 redirect to PDF</a></li>
+                  <li><a href="/tests/302redirecttoword.php">302 redirect to WORD</a></li>
+                  <li><a href="/tests/externalurlredirect.php">External redirect</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Head Call problems -></a>
+                <ul>
+                  <li><a href="/tests/headreturnserrorgetreturnsbinary.php">Head error -> download bin</a></li>
+                  <li><a href="/tests/headreturnserrorgetreturnshtml.php">Head error -> HTML</a></li>
+                  <li><a href="/tests/headtimeoutgethtml.php">Head timeout -> HTML</a></li>
+                </ul>
+              </li>
+            </ul>
+                    </ul>
+    </nav>
+</div>
+  <!-- Main -->
+  <section class="wrapper style1">
+    <div class="container">
+      <div class="row gtr-200">
+        <div class="col-8 col-12-narrower">
+          <div id="content">
+
+            <!-- Content -->
+
+            <article>
+              <header>
+                <h2>Page 1</h2>
+              </header>
+
+              <span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+                consequat etiam lorem ipsum dolor sit amet nullam.</p>
+
+              <h3>And Yet Another Subheading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
+                justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
+                ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
+                vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
+                Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
+                rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
+                Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
+                Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+
+              <p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
+                quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
+                Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
+                fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
+                Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
+                Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+            </article>
+
+          </div>
+        </div>
+        <div class="col-4 col-12-narrower">
+          <div id="sidebar">
+            <section>
+              <h3>Just a Subheading</h3>
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
+              <footer>
+                <a id="link2" href="page2.php" class="button">Continue reading on page 2</a>
+                <a class="link2" href="page2.php" class="button">Continue reading on page 2</a>
+              </footer>
+            </section>
+            <section>
+              <h3>Another Subheading</h3>
+              <ul class="links">
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Ornare in hendrerit in lectus</a></li>
+                <li><a href="#">Semper mod quis eget mi dolore</a></li>
+                <li><a href="#">Consequat etiam lorem phasellus</a></li>
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Semper mod quisturpis nisi</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Relative links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Absolute links</h3>
+                <ul class="links">
+                    <li><a href="#">Duis neque nisi dapibus</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan sed</a></li>
+                    <li><a href="#">Mattis et sed accumsan</a></li>
+                    <li><a href="#">Duis neque nisi sed</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum amet varius</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>External links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; Dummy Inc. All rights reserved</li></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.dropotron.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookiepopup.js"></script></body>
+</html>
+
+WARC/1.0
+WARC-Type: request
+WARC-Record-ID: <urn:uuid:df7fbdf5-4aaa-4683-8721-6e539fb44ed0>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=2
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:YP4YLHK5KFI24SFPJNYQSMHY75ZME4UH
+WARC-Block-Digest: sha1:AABD5NEUVBMPJZDOUOXECCTPG4JNSQNK
+Content-Type: application/http; msgtype=request
+Content-Length: 215
+
+GET
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:38d9aa85-e429-44d0-8f91-ded5620be968>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=2
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:AI3GOCQ5XI4TSCXMFTOBGI5RSOGCDPEF
+WARC-Block-Digest: sha1:CLWBERH7UEVMSXWM35K5HUEUK5YGBG6L
+Content-Type: application/http; msgtype=response
+Content-Length: 14069
+
+200 OK
+Date: Fri, 19 Jan 2024 08:12:29 GMT
+Server: Apache/2.4.58 (Unix)
+X-Powered-By: PHP/8.3.0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=jbnovctlr1qtf4f8356b5lm75s; path=/
+Keep-Alive: timeout=3, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Page1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- will be removed -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
+  </head>
+<body class="is-preload">
+<div id="page-wrapper">
+    <div id="header">
+    <h1 style="display:none"><a href="/" id="logo"></a></h1>
+    <nav id="nav">
+        <ul>
+            <li ><a href="/">Home</a></li>
+            <li class="current">
+                <a href="/page1.php">Page 1</a>
+                <ul>
+                    <li><a href="/movies.php">Movies</a></li>
+                    <li><a href="/media.php">Media</a></li>
+                    <li><a href="/images.php">Images</a></li>
+                    <li><a href="/massimages.php">200 Images</a></li>
+                    <li><a href="/links.php">Links</a></li>
+                    <li><a href="/externallinks.php">External Links</a></li>
+                    <li><a href="/basetag.php">Basetag</a></li>
+                    <li><a href="/forminputs.php">Form inputs</a></li>
+                    <li><a href="/tests/whatismyip.php">Crawler IP</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page2.php">Page 2</a>
+                <ul>
+                    <li><a href="/randomvariables.php">Variables</a></li>
+                    <li><a href="/iframe.php">IFrame</a></li>
+                    <li><a href="/shadowdom.php">Shadowdom</a></li>
+                    <li><a href="/downloads.php">Downloads</a></li>
+                    <li><a href="/sw/">Service worker</a></li>
+                    <li><a href="/pageloadmore.php">Load more page</a></li>
+                    <li><a href="/infinitescrolling.php">Infinite scroll</a></li>
+                    
+                  <li><a href="#">Post requests -></a>
+                    <ul>
+                      <li><a href="/postrequest.php">Postrequest</a></li>
+                      <li><a href="/postrequeststatic.php">Static chained postrequest</a></li>
+                      <li><a href="/multiplepostrequeststatic.php">Multiple post requests</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </li>
+            <li ><a href="/page3.php">Page 3</a>
+                <ul>
+                  <li><a href="/restricted">Restricted</a></li>
+                  <li><a href="/restricted/login2.php">Restricted (login2)</a></li>
+                  <li><a href="/restricted/login3.php">Restricted (login3)</a></li>
+                  <li><a href="/restricted/basicauth.php">Basic authentication</a></li>
+                  <li><a href="/blockingpopup.php">Blocking popup</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page4.php">Page 4</a>
+              <ul>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=1&links=0">Incremental 1</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=2&links=0">Incremental 2</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=3&links=0">Incremental 3</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=4&links=0">Incremental 4</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=5&links=0">Incremental 5</a></li>
+                <li><a href="/deleted.php">Deleted pages</a></li>
+                <li><a href="/deleted2.php">Deleted page</a></li>
+                <li><a href="/tests/identical1.php">Identical 1</a></li>
+                <li><a href="/tests/identical2.php">Identical 2</a></li>
+              </ul>
+            </li>
+          <li ><a href="/page5.php">Page 5</a>
+            <ul>
+              <li><a href="#">Tests part 1 -></a>
+                <ul>
+                  <li><a href="/tests/contentencodingheader.php">Content encoding header</a></li>
+                  <li><a href="/tests/cookie.php">Cookie</a></li>
+                  <li><a href="/tests/framebreaker.php">Framebreaker</a></li>
+                  <li><a href="/tests/illegalcharacterinlink.php">Illegal character in stylesheetlink</a></li>
+                  <li><a href="/tests/timeout.php">Timeout</a></li>
+                  <li><a href="/tests/timeout2.php">Timeout - Fast head</a></li>
+                  <li><a href="/tests/useragentdependent.php">User-agent dependent download</a></li>
+                  <li><a href="/tests/utf8characters.php">UTF-8 characters</a></li>
+                  <li><a href="/tests/hiddenlinks.php">Hidden links</a></li>
+                  <li><a href="/tests/notitle.php">Page without title</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tests part 2 -></a>
+                <ul>
+                  <li><a href="/tests/brokeniframes.php">Broken iframes</a></li>
+                  <li><a href="/tests/onclicklinks.php">On clicks</a></li>
+                  <li><a href="/tests/getandoption.php">Get/Option call</a></li>
+                  <li><a href="/tests/deleted.php">Deleted page</a></li>
+                  <li><a href="/tests/virtualtime.php">Virtual Time</a></li>
+                  <li><a href="/tests/invalidjsonpostdata.php">Invalid json response</a></li>
+                  <li><a href="/tests/mediaqueries.php">CSS media queries</a></li>
+                  <li><a href="/tests/javascriptwithbomoptions.php">Javascript with BOM</a></li>
+                  <li><a href="/tests/dataset_hasownproperty.php">Javascript hasOwnProperty error</a></li>
+                  <li><a href="/tests/elementobserver.php">Javascript observer error</a></li>
+                  <li><a href="/tests/imageencoding.php">Image encoding problem</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Redirects -></a>
+                <ul>
+                  <li><a href="/tests/htmlredirect.php">HTML redirect</a></li>
+                  <li><a href="/tests/301redirect.php">301 redirect</a></li>
+                  <li><a href="/tests/302redirect.php">302 redirect</a></li>
+                  <li><a href="/tests/302redirecttopdf.php">302 redirect to PDF</a></li>
+                  <li><a href="/tests/302redirecttoword.php">302 redirect to WORD</a></li>
+                  <li><a href="/tests/externalurlredirect.php">External redirect</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Head Call problems -></a>
+                <ul>
+                  <li><a href="/tests/headreturnserrorgetreturnsbinary.php">Head error -> download bin</a></li>
+                  <li><a href="/tests/headreturnserrorgetreturnshtml.php">Head error -> HTML</a></li>
+                  <li><a href="/tests/headtimeoutgethtml.php">Head timeout -> HTML</a></li>
+                </ul>
+              </li>
+            </ul>
+                    </ul>
+    </nav>
+</div>
+  <!-- Main -->
+  <section class="wrapper style1">
+    <div class="container">
+      <div class="row gtr-200">
+        <div class="col-8 col-12-narrower">
+          <div id="content">
+
+            <!-- Content -->
+
+            <article>
+              <header>
+                <h2>Page 1</h2>
+              </header>
+
+              <span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+                consequat etiam lorem ipsum dolor sit amet nullam.</p>
+
+              <h3>And Yet Another Subheading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
+                justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
+                ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
+                vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
+                Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
+                rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
+                Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
+                Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+
+              <p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
+                quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
+                Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
+                fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
+                Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
+                Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+            </article>
+
+          </div>
+        </div>
+        <div class="col-4 col-12-narrower">
+          <div id="sidebar">
+            <section>
+              <h3>Just a Subheading</h3>
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
+              <footer>
+                <a id="link2" href="page2.php" class="button">Continue reading on page 2</a>
+                <a class="link2" href="page2.php" class="button">Continue reading on page 2</a>
+              </footer>
+            </section>
+            <section>
+              <h3>Another Subheading</h3>
+              <ul class="links">
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Ornare in hendrerit in lectus</a></li>
+                <li><a href="#">Semper mod quis eget mi dolore</a></li>
+                <li><a href="#">Consequat etiam lorem phasellus</a></li>
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Semper mod quisturpis nisi</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Relative links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Absolute links</h3>
+                <ul class="links">
+                    <li><a href="#">Duis neque nisi dapibus</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan sed</a></li>
+                    <li><a href="#">Mattis et sed accumsan</a></li>
+                    <li><a href="#">Duis neque nisi sed</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum amet varius</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>External links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; Dummy Inc. All rights reserved</li></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.dropotron.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookiepopup.js"></script></body>
+</html>
+
+WARC/1.0
+WARC-Type: request
+WARC-Record-ID: <urn:uuid:b9a35e76-8fde-45b7-ba47-5860090076e3>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=3
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:YP4YLHK5KFI24SFPJNYQSMHY75ZME4UH
+WARC-Block-Digest: sha1:AABD5NEUVBMPJZDOUOXECCTPG4JNSQNK
+Content-Type: application/http; msgtype=request
+Content-Length: 215
+
+GET
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:6bf84113-bb8c-4548-97c7-0eaf7196838c>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=3
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:AI3GOCQ5XI4TSCXMFTOBGI5RSOGCDPEF
+WARC-Block-Digest: sha1:CLWBERH7UEVMSXWM35K5HUEUK5YGBG6L
+Content-Type: application/http; msgtype=response
+Content-Length: 14069
+
+200 OK
+Date: Fri, 19 Jan 2024 08:12:29 GMT
+Server: Apache/2.4.58 (Unix)
+X-Powered-By: PHP/8.3.0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=jbnovctlr1qtf4f8356b5lm75s; path=/
+Keep-Alive: timeout=3, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Page1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- will be removed -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
+  </head>
+<body class="is-preload">
+<div id="page-wrapper">
+    <div id="header">
+    <h1 style="display:none"><a href="/" id="logo"></a></h1>
+    <nav id="nav">
+        <ul>
+            <li ><a href="/">Home</a></li>
+            <li class="current">
+                <a href="/page1.php">Page 1</a>
+                <ul>
+                    <li><a href="/movies.php">Movies</a></li>
+                    <li><a href="/media.php">Media</a></li>
+                    <li><a href="/images.php">Images</a></li>
+                    <li><a href="/massimages.php">200 Images</a></li>
+                    <li><a href="/links.php">Links</a></li>
+                    <li><a href="/externallinks.php">External Links</a></li>
+                    <li><a href="/basetag.php">Basetag</a></li>
+                    <li><a href="/forminputs.php">Form inputs</a></li>
+                    <li><a href="/tests/whatismyip.php">Crawler IP</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page2.php">Page 2</a>
+                <ul>
+                    <li><a href="/randomvariables.php">Variables</a></li>
+                    <li><a href="/iframe.php">IFrame</a></li>
+                    <li><a href="/shadowdom.php">Shadowdom</a></li>
+                    <li><a href="/downloads.php">Downloads</a></li>
+                    <li><a href="/sw/">Service worker</a></li>
+                    <li><a href="/pageloadmore.php">Load more page</a></li>
+                    <li><a href="/infinitescrolling.php">Infinite scroll</a></li>
+                    
+                  <li><a href="#">Post requests -></a>
+                    <ul>
+                      <li><a href="/postrequest.php">Postrequest</a></li>
+                      <li><a href="/postrequeststatic.php">Static chained postrequest</a></li>
+                      <li><a href="/multiplepostrequeststatic.php">Multiple post requests</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </li>
+            <li ><a href="/page3.php">Page 3</a>
+                <ul>
+                  <li><a href="/restricted">Restricted</a></li>
+                  <li><a href="/restricted/login2.php">Restricted (login2)</a></li>
+                  <li><a href="/restricted/login3.php">Restricted (login3)</a></li>
+                  <li><a href="/restricted/basicauth.php">Basic authentication</a></li>
+                  <li><a href="/blockingpopup.php">Blocking popup</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page4.php">Page 4</a>
+              <ul>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=1&links=0">Incremental 1</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=2&links=0">Incremental 2</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=3&links=0">Incremental 3</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=4&links=0">Incremental 4</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=5&links=0">Incremental 5</a></li>
+                <li><a href="/deleted.php">Deleted pages</a></li>
+                <li><a href="/deleted2.php">Deleted page</a></li>
+                <li><a href="/tests/identical1.php">Identical 1</a></li>
+                <li><a href="/tests/identical2.php">Identical 2</a></li>
+              </ul>
+            </li>
+          <li ><a href="/page5.php">Page 5</a>
+            <ul>
+              <li><a href="#">Tests part 1 -></a>
+                <ul>
+                  <li><a href="/tests/contentencodingheader.php">Content encoding header</a></li>
+                  <li><a href="/tests/cookie.php">Cookie</a></li>
+                  <li><a href="/tests/framebreaker.php">Framebreaker</a></li>
+                  <li><a href="/tests/illegalcharacterinlink.php">Illegal character in stylesheetlink</a></li>
+                  <li><a href="/tests/timeout.php">Timeout</a></li>
+                  <li><a href="/tests/timeout2.php">Timeout - Fast head</a></li>
+                  <li><a href="/tests/useragentdependent.php">User-agent dependent download</a></li>
+                  <li><a href="/tests/utf8characters.php">UTF-8 characters</a></li>
+                  <li><a href="/tests/hiddenlinks.php">Hidden links</a></li>
+                  <li><a href="/tests/notitle.php">Page without title</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tests part 2 -></a>
+                <ul>
+                  <li><a href="/tests/brokeniframes.php">Broken iframes</a></li>
+                  <li><a href="/tests/onclicklinks.php">On clicks</a></li>
+                  <li><a href="/tests/getandoption.php">Get/Option call</a></li>
+                  <li><a href="/tests/deleted.php">Deleted page</a></li>
+                  <li><a href="/tests/virtualtime.php">Virtual Time</a></li>
+                  <li><a href="/tests/invalidjsonpostdata.php">Invalid json response</a></li>
+                  <li><a href="/tests/mediaqueries.php">CSS media queries</a></li>
+                  <li><a href="/tests/javascriptwithbomoptions.php">Javascript with BOM</a></li>
+                  <li><a href="/tests/dataset_hasownproperty.php">Javascript hasOwnProperty error</a></li>
+                  <li><a href="/tests/elementobserver.php">Javascript observer error</a></li>
+                  <li><a href="/tests/imageencoding.php">Image encoding problem</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Redirects -></a>
+                <ul>
+                  <li><a href="/tests/htmlredirect.php">HTML redirect</a></li>
+                  <li><a href="/tests/301redirect.php">301 redirect</a></li>
+                  <li><a href="/tests/302redirect.php">302 redirect</a></li>
+                  <li><a href="/tests/302redirecttopdf.php">302 redirect to PDF</a></li>
+                  <li><a href="/tests/302redirecttoword.php">302 redirect to WORD</a></li>
+                  <li><a href="/tests/externalurlredirect.php">External redirect</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Head Call problems -></a>
+                <ul>
+                  <li><a href="/tests/headreturnserrorgetreturnsbinary.php">Head error -> download bin</a></li>
+                  <li><a href="/tests/headreturnserrorgetreturnshtml.php">Head error -> HTML</a></li>
+                  <li><a href="/tests/headtimeoutgethtml.php">Head timeout -> HTML</a></li>
+                </ul>
+              </li>
+            </ul>
+                    </ul>
+    </nav>
+</div>
+  <!-- Main -->
+  <section class="wrapper style1">
+    <div class="container">
+      <div class="row gtr-200">
+        <div class="col-8 col-12-narrower">
+          <div id="content">
+
+            <!-- Content -->
+
+            <article>
+              <header>
+                <h2>Page 1</h2>
+              </header>
+
+              <span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+                consequat etiam lorem ipsum dolor sit amet nullam.</p>
+
+              <h3>And Yet Another Subheading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
+                justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
+                ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
+                vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
+                Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
+                rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
+                Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
+                Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+
+              <p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
+                quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
+                Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
+                fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
+                Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
+                Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+            </article>
+
+          </div>
+        </div>
+        <div class="col-4 col-12-narrower">
+          <div id="sidebar">
+            <section>
+              <h3>Just a Subheading</h3>
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
+              <footer>
+                <a id="link2" href="page2.php" class="button">Continue reading on page 2</a>
+                <a class="link2" href="page2.php" class="button">Continue reading on page 2</a>
+              </footer>
+            </section>
+            <section>
+              <h3>Another Subheading</h3>
+              <ul class="links">
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Ornare in hendrerit in lectus</a></li>
+                <li><a href="#">Semper mod quis eget mi dolore</a></li>
+                <li><a href="#">Consequat etiam lorem phasellus</a></li>
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Semper mod quisturpis nisi</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Relative links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Absolute links</h3>
+                <ul class="links">
+                    <li><a href="#">Duis neque nisi dapibus</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan sed</a></li>
+                    <li><a href="#">Mattis et sed accumsan</a></li>
+                    <li><a href="#">Duis neque nisi sed</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum amet varius</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>External links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; Dummy Inc. All rights reserved</li></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.dropotron.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookiepopup.js"></script></body>
+</html>
+
+WARC/1.0
+WARC-Type: request
+WARC-Record-ID: <urn:uuid:a71adcd2-6f58-44c1-b623-d018f20ab83c>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=4
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:YP4YLHK5KFI24SFPJNYQSMHY75ZME4UH
+WARC-Block-Digest: sha1:AABD5NEUVBMPJZDOUOXECCTPG4JNSQNK
+Content-Type: application/http; msgtype=request
+Content-Length: 215
+
+GET
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:a03bdbf6-1ecf-4fc3-ba2d-26dae5ca2cd5>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=4
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:AI3GOCQ5XI4TSCXMFTOBGI5RSOGCDPEF
+WARC-Block-Digest: sha1:CLWBERH7UEVMSXWM35K5HUEUK5YGBG6L
+Content-Type: application/http; msgtype=response
+Content-Length: 14069
+
+200 OK
+Date: Fri, 19 Jan 2024 08:12:29 GMT
+Server: Apache/2.4.58 (Unix)
+X-Powered-By: PHP/8.3.0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=jbnovctlr1qtf4f8356b5lm75s; path=/
+Keep-Alive: timeout=3, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Page1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- will be removed -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
+  </head>
+<body class="is-preload">
+<div id="page-wrapper">
+    <div id="header">
+    <h1 style="display:none"><a href="/" id="logo"></a></h1>
+    <nav id="nav">
+        <ul>
+            <li ><a href="/">Home</a></li>
+            <li class="current">
+                <a href="/page1.php">Page 1</a>
+                <ul>
+                    <li><a href="/movies.php">Movies</a></li>
+                    <li><a href="/media.php">Media</a></li>
+                    <li><a href="/images.php">Images</a></li>
+                    <li><a href="/massimages.php">200 Images</a></li>
+                    <li><a href="/links.php">Links</a></li>
+                    <li><a href="/externallinks.php">External Links</a></li>
+                    <li><a href="/basetag.php">Basetag</a></li>
+                    <li><a href="/forminputs.php">Form inputs</a></li>
+                    <li><a href="/tests/whatismyip.php">Crawler IP</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page2.php">Page 2</a>
+                <ul>
+                    <li><a href="/randomvariables.php">Variables</a></li>
+                    <li><a href="/iframe.php">IFrame</a></li>
+                    <li><a href="/shadowdom.php">Shadowdom</a></li>
+                    <li><a href="/downloads.php">Downloads</a></li>
+                    <li><a href="/sw/">Service worker</a></li>
+                    <li><a href="/pageloadmore.php">Load more page</a></li>
+                    <li><a href="/infinitescrolling.php">Infinite scroll</a></li>
+                    
+                  <li><a href="#">Post requests -></a>
+                    <ul>
+                      <li><a href="/postrequest.php">Postrequest</a></li>
+                      <li><a href="/postrequeststatic.php">Static chained postrequest</a></li>
+                      <li><a href="/multiplepostrequeststatic.php">Multiple post requests</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </li>
+            <li ><a href="/page3.php">Page 3</a>
+                <ul>
+                  <li><a href="/restricted">Restricted</a></li>
+                  <li><a href="/restricted/login2.php">Restricted (login2)</a></li>
+                  <li><a href="/restricted/login3.php">Restricted (login3)</a></li>
+                  <li><a href="/restricted/basicauth.php">Basic authentication</a></li>
+                  <li><a href="/blockingpopup.php">Blocking popup</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page4.php">Page 4</a>
+              <ul>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=1&links=0">Incremental 1</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=2&links=0">Incremental 2</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=3&links=0">Incremental 3</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=4&links=0">Incremental 4</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=5&links=0">Incremental 5</a></li>
+                <li><a href="/deleted.php">Deleted pages</a></li>
+                <li><a href="/deleted2.php">Deleted page</a></li>
+                <li><a href="/tests/identical1.php">Identical 1</a></li>
+                <li><a href="/tests/identical2.php">Identical 2</a></li>
+              </ul>
+            </li>
+          <li ><a href="/page5.php">Page 5</a>
+            <ul>
+              <li><a href="#">Tests part 1 -></a>
+                <ul>
+                  <li><a href="/tests/contentencodingheader.php">Content encoding header</a></li>
+                  <li><a href="/tests/cookie.php">Cookie</a></li>
+                  <li><a href="/tests/framebreaker.php">Framebreaker</a></li>
+                  <li><a href="/tests/illegalcharacterinlink.php">Illegal character in stylesheetlink</a></li>
+                  <li><a href="/tests/timeout.php">Timeout</a></li>
+                  <li><a href="/tests/timeout2.php">Timeout - Fast head</a></li>
+                  <li><a href="/tests/useragentdependent.php">User-agent dependent download</a></li>
+                  <li><a href="/tests/utf8characters.php">UTF-8 characters</a></li>
+                  <li><a href="/tests/hiddenlinks.php">Hidden links</a></li>
+                  <li><a href="/tests/notitle.php">Page without title</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tests part 2 -></a>
+                <ul>
+                  <li><a href="/tests/brokeniframes.php">Broken iframes</a></li>
+                  <li><a href="/tests/onclicklinks.php">On clicks</a></li>
+                  <li><a href="/tests/getandoption.php">Get/Option call</a></li>
+                  <li><a href="/tests/deleted.php">Deleted page</a></li>
+                  <li><a href="/tests/virtualtime.php">Virtual Time</a></li>
+                  <li><a href="/tests/invalidjsonpostdata.php">Invalid json response</a></li>
+                  <li><a href="/tests/mediaqueries.php">CSS media queries</a></li>
+                  <li><a href="/tests/javascriptwithbomoptions.php">Javascript with BOM</a></li>
+                  <li><a href="/tests/dataset_hasownproperty.php">Javascript hasOwnProperty error</a></li>
+                  <li><a href="/tests/elementobserver.php">Javascript observer error</a></li>
+                  <li><a href="/tests/imageencoding.php">Image encoding problem</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Redirects -></a>
+                <ul>
+                  <li><a href="/tests/htmlredirect.php">HTML redirect</a></li>
+                  <li><a href="/tests/301redirect.php">301 redirect</a></li>
+                  <li><a href="/tests/302redirect.php">302 redirect</a></li>
+                  <li><a href="/tests/302redirecttopdf.php">302 redirect to PDF</a></li>
+                  <li><a href="/tests/302redirecttoword.php">302 redirect to WORD</a></li>
+                  <li><a href="/tests/externalurlredirect.php">External redirect</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Head Call problems -></a>
+                <ul>
+                  <li><a href="/tests/headreturnserrorgetreturnsbinary.php">Head error -> download bin</a></li>
+                  <li><a href="/tests/headreturnserrorgetreturnshtml.php">Head error -> HTML</a></li>
+                  <li><a href="/tests/headtimeoutgethtml.php">Head timeout -> HTML</a></li>
+                </ul>
+              </li>
+            </ul>
+                    </ul>
+    </nav>
+</div>
+  <!-- Main -->
+  <section class="wrapper style1">
+    <div class="container">
+      <div class="row gtr-200">
+        <div class="col-8 col-12-narrower">
+          <div id="content">
+
+            <!-- Content -->
+
+            <article>
+              <header>
+                <h2>Page 1</h2>
+              </header>
+
+              <span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+                consequat etiam lorem ipsum dolor sit amet nullam.</p>
+
+              <h3>And Yet Another Subheading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
+                justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
+                ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
+                vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
+                Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
+                rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
+                Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
+                Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+
+              <p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
+                quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
+                Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
+                fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
+                Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
+                Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+            </article>
+
+          </div>
+        </div>
+        <div class="col-4 col-12-narrower">
+          <div id="sidebar">
+            <section>
+              <h3>Just a Subheading</h3>
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
+              <footer>
+                <a id="link2" href="page2.php" class="button">Continue reading on page 2</a>
+                <a class="link2" href="page2.php" class="button">Continue reading on page 2</a>
+              </footer>
+            </section>
+            <section>
+              <h3>Another Subheading</h3>
+              <ul class="links">
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Ornare in hendrerit in lectus</a></li>
+                <li><a href="#">Semper mod quis eget mi dolore</a></li>
+                <li><a href="#">Consequat etiam lorem phasellus</a></li>
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Semper mod quisturpis nisi</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Relative links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Absolute links</h3>
+                <ul class="links">
+                    <li><a href="#">Duis neque nisi dapibus</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan sed</a></li>
+                    <li><a href="#">Mattis et sed accumsan</a></li>
+                    <li><a href="#">Duis neque nisi sed</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum amet varius</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>External links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; Dummy Inc. All rights reserved</li></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.dropotron.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookiepopup.js"></script></body>
+</html>
+
+WARC/1.0
+WARC-Type: request
+WARC-Record-ID: <urn:uuid:18ccf560-fa4c-416b-8a87-e90d684307af>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=5
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:YP4YLHK5KFI24SFPJNYQSMHY75ZME4UH
+WARC-Block-Digest: sha1:AABD5NEUVBMPJZDOUOXECCTPG4JNSQNK
+Content-Type: application/http; msgtype=request
+Content-Length: 215
+
+GET
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+User-Agent: python-requests/2.31.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:5e995877-0ce3-45d4-af4b-60fe46b9d388>
+WARC-Target-URI: https://paginabevriezer.nl/page1.php?pageid=5
+WARC-Date: 2024-01-19T08:12:27Z
+WARC-Payload-Digest: sha1:AI3GOCQ5XI4TSCXMFTOBGI5RSOGCDPEF
+WARC-Block-Digest: sha1:CLWBERH7UEVMSXWM35K5HUEUK5YGBG6L
+Content-Type: application/http; msgtype=response
+Content-Length: 14069
+
+200 OK
+Date: Fri, 19 Jan 2024 08:12:29 GMT
+Server: Apache/2.4.58 (Unix)
+X-Powered-By: PHP/8.3.0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=jbnovctlr1qtf4f8356b5lm75s; path=/
+Keep-Alive: timeout=3, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Page1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- will be removed -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
+  </head>
+<body class="is-preload">
+<div id="page-wrapper">
+    <div id="header">
+    <h1 style="display:none"><a href="/" id="logo"></a></h1>
+    <nav id="nav">
+        <ul>
+            <li ><a href="/">Home</a></li>
+            <li class="current">
+                <a href="/page1.php">Page 1</a>
+                <ul>
+                    <li><a href="/movies.php">Movies</a></li>
+                    <li><a href="/media.php">Media</a></li>
+                    <li><a href="/images.php">Images</a></li>
+                    <li><a href="/massimages.php">200 Images</a></li>
+                    <li><a href="/links.php">Links</a></li>
+                    <li><a href="/externallinks.php">External Links</a></li>
+                    <li><a href="/basetag.php">Basetag</a></li>
+                    <li><a href="/forminputs.php">Form inputs</a></li>
+                    <li><a href="/tests/whatismyip.php">Crawler IP</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page2.php">Page 2</a>
+                <ul>
+                    <li><a href="/randomvariables.php">Variables</a></li>
+                    <li><a href="/iframe.php">IFrame</a></li>
+                    <li><a href="/shadowdom.php">Shadowdom</a></li>
+                    <li><a href="/downloads.php">Downloads</a></li>
+                    <li><a href="/sw/">Service worker</a></li>
+                    <li><a href="/pageloadmore.php">Load more page</a></li>
+                    <li><a href="/infinitescrolling.php">Infinite scroll</a></li>
+                    
+                  <li><a href="#">Post requests -></a>
+                    <ul>
+                      <li><a href="/postrequest.php">Postrequest</a></li>
+                      <li><a href="/postrequeststatic.php">Static chained postrequest</a></li>
+                      <li><a href="/multiplepostrequeststatic.php">Multiple post requests</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </li>
+            <li ><a href="/page3.php">Page 3</a>
+                <ul>
+                  <li><a href="/restricted">Restricted</a></li>
+                  <li><a href="/restricted/login2.php">Restricted (login2)</a></li>
+                  <li><a href="/restricted/login3.php">Restricted (login3)</a></li>
+                  <li><a href="/restricted/basicauth.php">Basic authentication</a></li>
+                  <li><a href="/blockingpopup.php">Blocking popup</a></li>
+                </ul>
+            </li>
+            <li ><a href="/page4.php">Page 4</a>
+              <ul>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=1&links=0">Incremental 1</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=2&links=0">Incremental 2</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=3&links=0">Incremental 3</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=4&links=0">Incremental 4</a></li>
+                <li><a href="/generatedpage.php?level=1&maxlevel=1&id=5&links=0">Incremental 5</a></li>
+                <li><a href="/deleted.php">Deleted pages</a></li>
+                <li><a href="/deleted2.php">Deleted page</a></li>
+                <li><a href="/tests/identical1.php">Identical 1</a></li>
+                <li><a href="/tests/identical2.php">Identical 2</a></li>
+              </ul>
+            </li>
+          <li ><a href="/page5.php">Page 5</a>
+            <ul>
+              <li><a href="#">Tests part 1 -></a>
+                <ul>
+                  <li><a href="/tests/contentencodingheader.php">Content encoding header</a></li>
+                  <li><a href="/tests/cookie.php">Cookie</a></li>
+                  <li><a href="/tests/framebreaker.php">Framebreaker</a></li>
+                  <li><a href="/tests/illegalcharacterinlink.php">Illegal character in stylesheetlink</a></li>
+                  <li><a href="/tests/timeout.php">Timeout</a></li>
+                  <li><a href="/tests/timeout2.php">Timeout - Fast head</a></li>
+                  <li><a href="/tests/useragentdependent.php">User-agent dependent download</a></li>
+                  <li><a href="/tests/utf8characters.php">UTF-8 characters</a></li>
+                  <li><a href="/tests/hiddenlinks.php">Hidden links</a></li>
+                  <li><a href="/tests/notitle.php">Page without title</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tests part 2 -></a>
+                <ul>
+                  <li><a href="/tests/brokeniframes.php">Broken iframes</a></li>
+                  <li><a href="/tests/onclicklinks.php">On clicks</a></li>
+                  <li><a href="/tests/getandoption.php">Get/Option call</a></li>
+                  <li><a href="/tests/deleted.php">Deleted page</a></li>
+                  <li><a href="/tests/virtualtime.php">Virtual Time</a></li>
+                  <li><a href="/tests/invalidjsonpostdata.php">Invalid json response</a></li>
+                  <li><a href="/tests/mediaqueries.php">CSS media queries</a></li>
+                  <li><a href="/tests/javascriptwithbomoptions.php">Javascript with BOM</a></li>
+                  <li><a href="/tests/dataset_hasownproperty.php">Javascript hasOwnProperty error</a></li>
+                  <li><a href="/tests/elementobserver.php">Javascript observer error</a></li>
+                  <li><a href="/tests/imageencoding.php">Image encoding problem</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Redirects -></a>
+                <ul>
+                  <li><a href="/tests/htmlredirect.php">HTML redirect</a></li>
+                  <li><a href="/tests/301redirect.php">301 redirect</a></li>
+                  <li><a href="/tests/302redirect.php">302 redirect</a></li>
+                  <li><a href="/tests/302redirecttopdf.php">302 redirect to PDF</a></li>
+                  <li><a href="/tests/302redirecttoword.php">302 redirect to WORD</a></li>
+                  <li><a href="/tests/externalurlredirect.php">External redirect</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Head Call problems -></a>
+                <ul>
+                  <li><a href="/tests/headreturnserrorgetreturnsbinary.php">Head error -> download bin</a></li>
+                  <li><a href="/tests/headreturnserrorgetreturnshtml.php">Head error -> HTML</a></li>
+                  <li><a href="/tests/headtimeoutgethtml.php">Head timeout -> HTML</a></li>
+                </ul>
+              </li>
+            </ul>
+                    </ul>
+    </nav>
+</div>
+  <!-- Main -->
+  <section class="wrapper style1">
+    <div class="container">
+      <div class="row gtr-200">
+        <div class="col-8 col-12-narrower">
+          <div id="content">
+
+            <!-- Content -->
+
+            <article>
+              <header>
+                <h2>Page 1</h2>
+              </header>
+
+              <span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+                consequat etiam lorem ipsum dolor sit amet nullam.</p>
+
+              <h3>And Yet Another Subheading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
+                justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
+                ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
+                vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
+                Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
+                rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
+                Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
+                Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+
+              <p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
+                quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
+                Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
+                fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
+                Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
+                Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+            </article>
+
+          </div>
+        </div>
+        <div class="col-4 col-12-narrower">
+          <div id="sidebar">
+            <section>
+              <h3>Just a Subheading</h3>
+              <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
+              <footer>
+                <a id="link2" href="page2.php" class="button">Continue reading on page 2</a>
+                <a class="link2" href="page2.php" class="button">Continue reading on page 2</a>
+              </footer>
+            </section>
+            <section>
+              <h3>Another Subheading</h3>
+              <ul class="links">
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Ornare in hendrerit in lectus</a></li>
+                <li><a href="#">Semper mod quis eget mi dolore</a></li>
+                <li><a href="#">Consequat etiam lorem phasellus</a></li>
+                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                <li><a href="#">Semper mod quisturpis nisi</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Relative links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>Absolute links</h3>
+                <ul class="links">
+                    <li><a href="#">Duis neque nisi dapibus</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan sed</a></li>
+                    <li><a href="#">Mattis et sed accumsan</a></li>
+                    <li><a href="#">Duis neque nisi sed</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum amet varius</a></li>
+                </ul>
+            </section>
+            <section class="col-4 col-6-narrower col-12-mobilep">
+                <h3>External links</h3>
+                <ul class="links">
+                    <li><a href="#">Mattis et quis rutrum</a></li>
+                    <li><a href="#">Suspendisse amet varius</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan dolor</a></li>
+                    <li><a href="#">Mattis rutrum accumsan</a></li>
+                    <li><a href="#">Suspendisse varius nibh</a></li>
+                    <li><a href="#">Sed et dapibus mattis</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; Dummy Inc. All rights reserved</li></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.dropotron.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookiepopup.js"></script></body>
+</html>
+

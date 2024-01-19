@@ -136,6 +136,29 @@ com,example)/ 20170306040348 {"url": "http://example.com/", "digest": "sha1:3I42
         res = self.index_file("example.warc.gz", records="all", post_append=True)
         assert res == exp
 
+    def test_warc_secondary_index_boundary(self, number_of_warc_requests, lines):
+        with tempfile.TemporaryFile() as temp_fh:
+            filename = f"requests{number_of_warc_requests}.warc"
+            res = self.index_file(
+                filename,
+                sort=True,
+                post_append=True,
+                compress=temp_fh,
+                data_out_name="comp.cdxj.gz",
+                lines=lines,
+            )
+
+        return res
+
+    def test_warc_secondary_index_boundaries(self):
+        test_number_of_warc_requests = [3, 4, 5, 8]
+        lines = 4
+
+        for number_of_warc_requests in test_number_of_warc_requests:
+            res = self.test_warc_secondary_index_boundary(number_of_warc_requests=number_of_warc_requests, lines=lines)
+            line_count = len([line for line in res.splitlines() if not line.startswith('!meta')])
+            assert (number_of_warc_requests // lines) + (1 if number_of_warc_requests % lines != 0 else 0) == line_count
+
     def test_arc_cdxj(self):
         res = self.index_file("example.arc")
         exp = """\
@@ -241,8 +264,8 @@ org,httpbin)/post?__wb_method=post&another=more^data&test=some+data 202008091953
 
         assert len(lines) == 3
         assert (
-            lines[0]
-            == '!meta 0 {"format": "cdxj-gzip-1.0", "filename": "comp_2.cdxj.gz"}'
+                lines[0]
+                == '!meta 0 {"format": "cdxj-gzip-1.0", "filename": "comp_2.cdxj.gz"}'
         )
         assert lines[1].startswith(
             'com,example)/ 20140102000000 {"offset": 0, "length": 1319, "digest": "sha256:'
@@ -363,7 +386,7 @@ class CustomIndexer(CDXJIndexer):
     def process_index_entry(self, it, record, *args):
         type_ = record.rec_headers.get("WARC-Type")
         if type_ == "response" and record.http_headers.get("Content-Type").startswith(
-            "text/html"
+                "text/html"
         ):
             assert record.buffered_stream.read() != b""
 
