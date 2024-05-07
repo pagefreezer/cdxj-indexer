@@ -489,7 +489,7 @@ class CompressedWriter:
 
 # ============================================================================
 def main(args=None):
-    print("Version includes: DF-727, WA2-785, WA2-1399, WA2-3683, WA2-4045")
+    print("Version includes: DF-727, WA2-785, WA2-1399, WA2-3683, WA2-4045, WA2-5013")
     parser = ArgumentParser(
         description="cdx_indexer", formatter_class=RawTextHelpFormatter
     )
