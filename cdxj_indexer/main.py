@@ -3,7 +3,6 @@ from __future__ import absolute_import
 import hashlib
 import heapq
 import json
-import surt
 import logging
 import os
 import re
@@ -25,6 +24,8 @@ from warcio.archiveiterator import ArchiveIterator
 from warcio.utils import open_or_default
 
 from cdxj_indexer.bufferiter import buffering_record_iter, BUFF_SIZE
+
+from cdxj_indexer.surt import url_to_surt
 
 # ============================================================================
 class CDXJIndexer(Indexer):
@@ -58,23 +59,23 @@ class CDXJIndexer(Indexer):
     DEFAULT_NUM_LINES = 300
 
     def __init__(
-        self,
-        output,
-        inputs,
-        post_append=False,
-        sort=False,
-        compress=None,
-        lines=DEFAULT_NUM_LINES,
-        max_sort_buff_size=None,
-        data_out_name=None,
-        filename=None,
-        fields=None,
-        replace_fields=None,
-        records=None,
-        verify_http=False,
-        dir_root=None,
-        digest_records=False,
-        **kwargs
+            self,
+            output,
+            inputs,
+            post_append=False,
+            sort=False,
+            compress=None,
+            lines=DEFAULT_NUM_LINES,
+            max_sort_buff_size=None,
+            data_out_name=None,
+            filename=None,
+            fields=None,
+            replace_fields=None,
+            records=None,
+            verify_http=False,
+            dir_root=None,
+            digest_records=False,
+            **kwargs
     ):
 
         if isinstance(inputs, str) or hasattr(inputs, "read"):
@@ -256,10 +257,10 @@ class CDXJIndexer(Indexer):
             return False
 
         if (
-            self.include_records == self.DEFAULT_RECORDS
-            and record.rec_type in ("resource", "metadata")
-            and record.rec_headers.get_header("Content-Type")
-            == "application/warc-fields"
+                self.include_records == self.DEFAULT_RECORDS
+                and record.rec_type in ("resource", "metadata")
+                and record.rec_headers.get_header("Content-Type")
+                == "application/warc-fields"
         ):
             return False
 
@@ -303,7 +304,7 @@ class CDXJIndexer(Indexer):
 
     def get_url_key(self, url):
         try:
-            return surt.surt(url)
+            return url_to_surt(url)
         except:  # pragma: no coverage
             return url
 
@@ -425,12 +426,12 @@ class SortingWriter:
 # ============================================================================
 class CompressedWriter:
     def __init__(
-        self,
-        index_out,
-        data_out,
-        num_lines=CDXJIndexer.DEFAULT_NUM_LINES,
-        data_out_name="",
-        digest_records=False,
+            self,
+            index_out,
+            data_out,
+            num_lines=CDXJIndexer.DEFAULT_NUM_LINES,
+            data_out_name="",
+            digest_records=False,
     ):
         self.index_out = index_out
         self.data_out = data_out

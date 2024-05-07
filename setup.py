@@ -47,7 +47,6 @@ setup(
     ],
     install_requires=[
         "warcio",
-        "surt",
         # temp fix for requests
         "idna<3.0",
         "py3amf",
