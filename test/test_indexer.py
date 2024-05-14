@@ -34,6 +34,8 @@ class TestIndexing(object):
         if extra_params:
             params += extra_params
 
+        params.append('-no-version-info')
+
         res = main(params)
 
         return capsys.readouterr().out
