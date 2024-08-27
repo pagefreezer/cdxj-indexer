@@ -25,7 +25,7 @@ from warcio.utils import open_or_default
 
 from cdxj_indexer.bufferiter import buffering_record_iter, BUFF_SIZE
 
-from cdxj_indexer.surt import url_to_surt
+from cdxj_indexer.customsurt import url_to_surt
 
 # ============================================================================
 class CDXJIndexer(Indexer):
